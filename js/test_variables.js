@@ -5,4 +5,4 @@ name = "Vasiliy";
 admin = name;
 alert("Admin is '" + admin + "'!");
 
-console.log("no mistakes: test_variables")
+console.log("no mistakes: test_variables");

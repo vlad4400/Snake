@@ -1,4 +1,4 @@
-console.log("start: work3");
+console.log("start: task-3");
 console.log("");
 
 var
@@ -14,4 +14,4 @@ if (a >= 0 && b >= 0) {
 }
 
 console.log("");
-console.log("end: work3");
+console.log("end: task-3");

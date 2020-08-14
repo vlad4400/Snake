@@ -22,9 +22,13 @@ function getStrPrimeNumbers(minNum, maxNum) {
     return isPrimeNumber(minNum)?(""+minNum):"";
   }
 
-  var strPrimeNumbers = "";
-  for (var num = minNum; num <= maxNum; num++) {
+  var
+    strPrimeNumbers = "",
+    num = minNum;
+
+  while (num <= maxNum) {
     strPrimeNumbers += isPrimeNumber(num)?(" "+num):"";
+    num++;
   }
 
   return strPrimeNumbers.slice(1);
@@ -34,10 +38,14 @@ function isPrimeNumber(num) {
   if (num <= 0) return false;
   if (num == 1 || num == 2) return true;
 
-  for (var i = 2; i < num; i++) {
+  var
+    i = 2;
+
+  while (i < num) {
     if (!(num % i)) {
       return false;
     };
+    i++;
   }
   return true;
 }

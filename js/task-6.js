@@ -10,6 +10,8 @@ function mathOperation(arg1, arg2, operation) {
     case "mul":
       return arg1 * arg2;
     case "div":
+      if (arg2 == 0)
+        return "error";
       return arg1 / arg2;
     default:
       return "error";

@@ -11,6 +11,8 @@ function mMul(a, b) {
   return a * b;
 }
 function mDiv(a, b) {
+  if (b == 0)
+    return "error";
   return a / b;
 }
 

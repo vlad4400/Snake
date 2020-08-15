@@ -3,7 +3,7 @@ console.log("");
 
 class Goods {
 
-  static listGoods = [
+  static #listGoods = [
     {nameGood: "yogurt", price: 249}, //real price 2.49
     {nameGood: "socks", price: 499},
     {nameGood: "milk", price: 216},
@@ -13,7 +13,7 @@ class Goods {
   ]
 
   static getPrice(nameGood) {
-    for (var good of this.listGoods) {
+    for (var good of this.#listGoods) {
       if (good.nameGood == nameGood) {
         return good.price;
       }
@@ -21,7 +21,7 @@ class Goods {
   }
 
   static inListGoods(nameGood) {
-    for (var good of this.listGoods) {
+    for (var good of this.#listGoods) {
       if (good.nameGood == nameGood)
         return true;
     }
@@ -31,21 +31,38 @@ class Goods {
 
 class Basket {
 
-  goods = [];
+  #goods = [];
+
+  #updateGoods() {
+    var temp = [];
+    for (var good of this.#goods) {
+      if (good != undefined) {
+         temp.push(good);
+      }
+    }
+    this.#goods = temp;
+  }
 
   push(nameGood) {
     if (Goods.inListGoods(nameGood)) {
-      this.goods.push(nameGood);
+      this.#goods.push(nameGood);
       return true;
     }
     return false;
   }
 
-  pop(){}
+  pop(nameGood) {
+    if (delete(this.#goods[this.#goods.indexOf(nameGood)])) {
+      this.#updateGoods();
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   countBasketPrice() {
     var sum = 0;
-    for (var good of this.goods) {
+    for (var good of this.#goods) {
       sum += Goods.getPrice(good);
     }
     return sum/100; // 249 -> 2.49 (2.49 - real price)
@@ -60,6 +77,8 @@ backet.push("soap");
 backet.push("cheese");
 backet.push("milk");
 
+console.log("Price: " + backet.countBasketPrice() + " PLN");
+backet.pop("soap");
 console.log("Price: " + backet.countBasketPrice() + " PLN");
 /*END MAIN PART*/
 

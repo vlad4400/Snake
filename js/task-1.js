@@ -35,8 +35,7 @@ function getStrPrimeNumbers(minNum, maxNum) {
 }
 
 function isPrimeNumber(num) {
-  if (num <= 0) return false;
-  if (num == 1 || num == 2) return true;
+  if (num <= 1) return false;
 
   var
     i = 2;

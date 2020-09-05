@@ -24,11 +24,23 @@ table {
   border-spacing: 0;
   border: 2px solid #9295a5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
-.color-light {
+.background-color-light {
   background-color: #dbdbdd;
+  background-color: rgba(219, 219, 221 .8);
 }
-.color-dark {
+.background-color-dark {
   background-color: #727585;
+  background-color: rgba(114, 117, 133, .8);
+}
+.text-color-light {
+  color: #dbdbdd;
+}
+.text-color-dark {
+  color:  #727585;
+}
+.background-color-dark-transparent {
+  background-color: rgba(0, 0, 0, .2);
 }

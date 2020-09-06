@@ -3,11 +3,11 @@ console.log("[main.js]# start reading script");
 function initiation() {
   createChessBoard(8);
   addCaptionToChessBoard();
-  // addChessPieceToChessBoard();
+  addChessPieceToChessBoard();
 }
 
 function createChessBoard(SIZE_BOARD = 8) {
-  console.log("[main.js]# start executing func 'creatChessBoard'");
+  console.log("[main.js]# start executing func 'createChessBoard'");
   var table = document.createElement("table");
   var body = document.querySelector("body");
   var tbody = document.createElement("tbody");
@@ -48,7 +48,7 @@ function createChessBoard(SIZE_BOARD = 8) {
       }
     }
   }
-  console.log("[main.js]# end executing func 'creatChessBoard'");
+  console.log("[main.js]# end executing func 'createChessBoard'");
 }
 
 function addCaptionToChessBoard(SIZE_BOARD = 8) {
@@ -102,69 +102,99 @@ function addChessPieceToChessBoard(SIZE_BOARD = 8) {
   for (var i = 0; i < SIZE_BOARD + 2; i++) {
     tdArr = trArr[i].getElementsByTagName("td");
     for (var i2 = 0; i2 < SIZE_BOARD + 2; i2++) {
-      // tdArr[i2].style.fontSize = "5px";
-      // tdArr[i2].style.lineHeight = "0px";
       /*chess-piece-top*/
       if (i == 1) {
         switch (i2) {
           case 1:
-          tdArr[i2].innerHTML = "&#9814;";
+          tdArr[i2].innerHTML = "&#9820;";
           break;
           case 2:
-          tdArr[i2].innerHTML = "&#9814;";
+          tdArr[i2].innerHTML = "&#9822;";
           break;
           case 3:
-          tdArr[i2].innerHTML = "&#9814;";
+          tdArr[i2].innerHTML = "&#9821;";
           break;
           case 4:
-          tdArr[i2].innerHTML = "&#9814;";
+          tdArr[i2].innerHTML = "&#9819;";
           break;
           case 5:
-          tdArr[i2].innerHTML = "&#9814;";
+          tdArr[i2].innerHTML = "&#9818;";
           break;
           case 6:
-          tdArr[i2].innerHTML = "&#9814;";
+          tdArr[i2].innerHTML = "&#9821;";
           break;
           case 7:
-          tdArr[i2].innerHTML = "&#9814;";
+          tdArr[i2].innerHTML = "&#9822;";
           break;
           case 8:
-          tdArr[i2].innerHTML = "&#9814;";
+          tdArr[i2].innerHTML = "&#9820;";
           break;
         }
       }
       if (i == 2) {
         switch (i2) {
           case 1:
-          tdArr[i2].innerHTML = "&#9817;";
-          break;
           case 2:
-          tdArr[i2].innerHTML = "&#9817;";
-          break;
           case 3:
-          tdArr[i2].innerHTML = "&#9817;";
-          break;
           case 4:
-          tdArr[i2].innerHTML = "&#9817;";
-          break;
           case 5:
-          tdArr[i2].innerHTML = "&#9817;";
-          break;
           case 6:
-          tdArr[i2].innerHTML = "&#9817;";
-          break;
           case 7:
-          tdArr[i2].innerHTML = "&#9817;";
-          break;
           case 8:
-          tdArr[i2].innerHTML = "&#9817;";
+          tdArr[i2].innerHTML = "&#9823;";
           break;
         }
       }
       /*chess-piece-bottom*/
-      if (i == SIZE_BOARD + 2 - 1) {
-        if (i2 != 0 && i2 != SIZE_BOARD + 2 - 1) {
-          // tdArr[i2].innerHTML = "&#" + (64 + i2) + ";";
+      if (i == SIZE_BOARD + 2 - 3) {
+        switch (i2) {
+          case 1:
+          case 2:
+          case 3:
+          case 4:
+          case 5:
+          case 6:
+          case 7:
+          case 8:
+          tdArr[i2].style.color = "white";
+          tdArr[i2].innerHTML = "&#9823;";
+          break;
+        }
+      }
+      if (i == SIZE_BOARD + 2 - 2) {
+        switch (i2) {
+          case 1:
+          tdArr[i2].style.color = "white";
+          tdArr[i2].innerHTML = "&#9820;";
+          break;
+          case 2:
+          tdArr[i2].style.color = "white";
+          tdArr[i2].innerHTML = "&#9822;";
+          break;
+          case 3:
+          tdArr[i2].style.color = "white";
+          tdArr[i2].innerHTML = "&#9821;";
+          break;
+          case 4:
+          tdArr[i2].style.color = "white";
+          tdArr[i2].innerHTML = "&#9819;";
+          break;
+          case 5:
+          tdArr[i2].style.color = "white";
+          tdArr[i2].innerHTML = "&#9818;";
+          break;
+          case 6:
+          tdArr[i2].style.color = "white";
+          tdArr[i2].innerHTML = "&#9821;";
+          break;
+          case 7:
+          tdArr[i2].style.color = "white";
+          tdArr[i2].innerHTML = "&#9822;";
+          break;
+          case 8:
+          tdArr[i2].style.color = "white";
+          tdArr[i2].innerHTML = "&#9820;";
+          break;
         }
       }
     }

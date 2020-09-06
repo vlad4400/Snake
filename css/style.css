@@ -15,12 +15,6 @@ html {
 }
 
 table {
-  /* min-width: 150px;
-  min-height: 150px;
-  height: 95vmin;
-  width: 95vmin;
-  min-width: 500px;
-  min-height: 500px; */
   border-spacing: 0;
   border: 2px solid #9295a5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -28,17 +22,18 @@ table {
 }
 
 td {
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
+  font-size: 9px;
 }
 
 .background-color-light {
   background-color: #dbdbdd;
-  background-color: rgba(219, 219, 221 .8);
+  background-color: rgba(219, 219, 221, .9);
 }
 .background-color-dark {
   background-color: #727585;
-  background-color: rgba(114, 117, 133, .8);
+  background-color: rgba(114, 117, 133, .9);
 }
 .text-color-light {
   color: #dbdbdd;
@@ -52,15 +47,17 @@ td {
 
 @media only screen and (min-width: 150px) and (min-height: 150px) {
   td {
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
+    font-size: 10px;
   }
 }
 
 @media only screen and (min-width: 180px) and (min-height: 180px) {
   td {
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
   }
 }
 
@@ -68,13 +65,7 @@ td {
   td {
     width: 18px;
     height: 18px;
-  }
-}
-
-@media only screen and (min-width: 220px) and (min-height: 220px) {
-  td {
-    width: 19px;
-    height: 19px;
+    font-size: 13px;
   }
 }
 
@@ -82,6 +73,15 @@ td {
   td {
     width: 19px;
     height: 19px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 220px) and (min-height: 220px) {
+  td {
+    width: 21px;
+    height: 21px;
+    font-size: 16px;
   }
 }
 
@@ -89,6 +89,7 @@ td {
   td {
     width: 23px;
     height: 23px;
+    font-size: 18px;
   }
 }
 
@@ -96,6 +97,7 @@ td {
   td {
     width: 28px;
     height: 28px;
+    font-size: 21px;
   }
 }
 
@@ -103,6 +105,7 @@ td {
   td {
     width: 33px;
     height: 33px;
+    font-size: 24px;
   }
 }
 
@@ -110,6 +113,7 @@ td {
   td {
     width: 45px;
     height: 45px;
+    font-size: 30px;
   }
 }
 
@@ -117,6 +121,7 @@ td {
   td {
     width: 55px;
     height: 55px;
+    font-size: 40px;
   }
 }
 
@@ -124,6 +129,7 @@ td {
   td {
     width: 75px;
     height: 75px;
+    font-size: 58px;
   }
 }
 
@@ -131,6 +137,7 @@ td {
   td {
     width: 90px;
     height: 90px;
+    font-size: 72px;
   }
 }
 
@@ -138,6 +145,7 @@ td {
   td {
     width: 115px;
     height: 115px;
+    font-size: 95px;
   }
 }
 
@@ -145,6 +153,7 @@ td {
   td {
     width: 160px;
     height: 160px;
+    font-size: 130px;
   }
 }
 
@@ -152,5 +161,6 @@ td {
   td {
     width: 190px;
     height: 190px;
+    font-size: 150px;
   }
 }

@@ -1,0 +1,15 @@
+.small-img-item {
+  cursor: pointer;
+}
+
+.small-img-item:active {
+  cursor: progress;
+}
+
+#big-img {
+  height: 550px;
+}
+
+#big-img img {
+  height: 100%;
+}

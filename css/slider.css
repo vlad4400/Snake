@@ -17,7 +17,6 @@ button:active {
 html,
 body {
   margin: 0;
-  height: 100%;
 }
 
 body {
@@ -29,8 +28,9 @@ body {
 #small-img-wrapper {
   display: flex;
   justify-content: center;
-  height: 18vh;
+  height: 14vh;
   margin: 1vh;
+  overflow: hidden;
 }
 
 .small-img-item {
@@ -41,8 +41,9 @@ body {
 #big-img-wrapper {
   display: flex;
   justify-content: center;
-  height: 70vh;
+  height: 74vh;
   margin: 1vh;
+  overflow: hidden;
 }
 
 .big-img {
@@ -57,7 +58,7 @@ body {
 }
 
 button {
-  width: 5%;
+  width: 25%;
   height: 100%;
   overflow: hidden;
 }

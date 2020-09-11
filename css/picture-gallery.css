@@ -6,10 +6,37 @@
   cursor: progress;
 }
 
-#big-img {
-  height: 550px;
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 
-#big-img img {
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#small-img-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 18vh;
+  margin: 1vh;
+}
+
+.small-img-item {
+  height: 100%;
+  margin: 0 0.3%;
+}
+
+#big-img-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  margin: 1vh;
+}
+
+.big-img {
   height: 100%;
 }

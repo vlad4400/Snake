@@ -6,18 +6,58 @@
   cursor: progress;
 }
 
-#big-img-wrapper {
-  height: 550px;
-}
-
-.big-img {
-  height: 100%;
-}
-
 button {
   cursor: pointer;
 }
 
 button:active {
   cursor: progress;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#small-img-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 18vh;
+  margin: 1vh;
+}
+
+.small-img-item {
+  height: 100%;
+  margin: 0 0.3%;
+}
+
+#big-img-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  margin: 1vh;
+}
+
+.big-img {
+  height: 100%;
+}
+
+#button-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 6vh;
+  margin: 1vh;
+}
+
+button {
+  width: 5%;
+  height: 100%;
+  overflow: hidden;
 }

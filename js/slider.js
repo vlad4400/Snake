@@ -21,7 +21,7 @@ function createGalleryPictures() {
     img.src = `img/small/image-${i}.jpg`;
     img.onclick = openBigImg;
 
-    document.getElementById("small-img").appendChild(img);
+    document.getElementById("small-img-wrapper").appendChild(img);
   }
 
   /*on action click*/
@@ -67,7 +67,7 @@ function createButtons() {
     bigImg.setAttribute("id", bigImg.id.replace(index, indexNext));
   }
 
-  let body = document.querySelector("body");
+  let body = document.getElementById("button-wrapper");
   body.appendChild(btnLeft);
   body.appendChild(btnRight);
 }

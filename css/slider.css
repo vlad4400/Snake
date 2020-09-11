@@ -1,0 +1,23 @@
+.small-img-item {
+  cursor: pointer;
+}
+
+.small-img-item:active {
+  cursor: progress;
+}
+
+#big-img-wrapper {
+  height: 550px;
+}
+
+.big-img {
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  cursor: progress;
+}

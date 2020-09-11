@@ -19,10 +19,9 @@ body {
 
 #small-img-wrapper {
   display: flex;
-  justify-content: center;
-  height: 14vh;
+  height: 18vh;
   margin: 1vh;
-  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .small-img-item {
@@ -33,7 +32,7 @@ body {
 #big-img-wrapper {
   display: flex;
   justify-content: center;
-  height: 74vh;
+  height: 70vh;
   margin: 1vh;
   overflow: hidden;
 }

@@ -27,7 +27,6 @@ body {
 
 #small-img-wrapper {
   display: flex;
-  justify-content: center;
   height: 18vh;
   margin: 1vh;
   overflow-x: scroll;

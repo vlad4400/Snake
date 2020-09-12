@@ -1,4 +1,4 @@
-// Глобальные переменные:                            
+// Глобальные переменные:
 var FIELD_SIZE_X = 20;//строки
 var FIELD_SIZE_Y = 20;//столбцы
 var SNAKE_SPEED = 200; // Интервал между перемещениями змейки
@@ -14,7 +14,7 @@ function init() {
 
     var wrap = document.getElementsByClassName('wrap')[0];
     // Подгоняем размер контейнера под игровое поле
-    
+
 	/*
 	if (16 * (FIELD_SIZE_X + 1) < 380) {
         wrap.style.width = '380px';
@@ -133,12 +133,12 @@ function move() {
         snake.push(new_unit);
 
         // Проверяем, надо ли убрать хвост
-       
+
 	   if (!haveFood(new_unit)) {
             // Находим хвост
            var removed = snake.splice(0, 1)[0];
             var classes = removed.getAttribute('class').split(' ');
-			
+
             // удаляем хвост
             removed.setAttribute('class', classes[0] + ' ' + classes[1]);
         }
@@ -177,6 +177,7 @@ function haveFood(unit) {
         createFood();
 
         score++;
+        document.getElementById('score').innerText = 'Счёт: ' + score;
     }
     return check;
 }
@@ -213,8 +214,6 @@ function createFood() {
  * @param e - событие
  */
 function changeDirection(e) {
-    console.log(e);
-	
 	switch (e.keyCode) {
         case 37: // Клавиша влево
             if (direction != 'x+') {
